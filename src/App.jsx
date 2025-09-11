@@ -67,7 +67,7 @@ function App() {
       if (result.isPaid) {
         showNotification('success', 'Pagamento confirmado! Redirecionando...');
         setTimeout(() => {
-          window.location.href = 'https://wa.me/5511999999999?text=Olá! Acabei de fazer o pagamento do curso de confeitaria';
+          window.location.href = 'https://confeitaria-obrigado.netlify.app/';
         }, 2000);
       } else {
         showNotification('info', 'Pagamento ainda não confirmado');
@@ -376,7 +376,7 @@ function App() {
             {paymentData?.qrCodeUrl && (
               <div style={{ marginBottom: '30px' }}>
                 <img 
-                  src={`data:image/png;base64,${paymentData.qrCodeUrl}`}
+                  src={paymentData.qrCodeUrl}
                   alt="QR Code PIX"
                   style={{
                     maxWidth: '250px',
