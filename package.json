@@ -1,0 +1,13 @@
+{
+  "name": "confeitaria-lucrativa-frontend",
+  "version": "1.0.0",
+  "description": "Frontend da Confeitaria Lucrativa com integração PIX",
+  "scripts": {
+    "build": "echo 'Static site - no build needed' && exit 0",
+    "dev": "python -m http.server 3000",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": ["confeitaria", "pix", "frontend"],
+  "author": "Confeitaria Lucrativa",
+  "license": "ISC"
+}
